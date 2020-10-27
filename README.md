@@ -1,3 +1,6 @@
 # 20-20-20
 
 This is a very simple website which I created using **HTML**, **CSS** and **JavaScript**.
+It has been created to help the users follow 20-20-20 rule which helps to protect the eyes from prolonged usage of digital screens.
+
+

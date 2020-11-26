@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Vishank">
+    <title>Slider</title>
+
+    <link rel="icon" type="image/png" href="Assets\favicon.png">
+
+    <!-- stylesheet -->
+    <link rel="stylesheet" media="screen" href="CSS\base.css">
+    <link rel="stylesheet" media="screen" href="CSS\set.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300&display=swap" rel="stylesheet">
+
+</head>
+
+<body onload="setValue()">
+    
+
+    <div class="title">
+        <div id="title">Look away</div>
+    </div>
+
+    <div id="navbar">
+        <div id="home">
+            <a href="index.html" style="text-decoration: none;">Home</a>
+        </div>
+        <div id="set">
+            <a href="set.html" style="text-decoration: none;">Set duration</a>
+        </div>
+        <div id="about">
+                <a href="about.html" style="text-decoration: none;">About</a>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <div id="setValueContainer">
+        <span id="rangeValue"></span>
+        <input id="range" type="range" name="" value="mins" min="10" max="30" onChange="rangeSlide(this.value);console.log(value);" onmousemove="rangeSlide(this.value)">
+    </div>
+
+    <footer id="footer">
+        <> with ❤ by <a href="https://www.github.com/VishankSingh" style="text-decoration: none;">vishank</a>
+    </footer>
+
+    <script type="text/javascript">
+
+        function rangeSlide(value){
+            localStorage.setItem("mins", value);
+            document.getElementById('rangeValue').innerHTML = localStorage.getItem("mins");
+            
+        }
+        
+        function setValue(){
+            document.getElementById('rangeValue').innerHTML = localStorage.getItem("mins")
+            document.getElementById('range').value = localStorage.getItem("mins")
+        }
+
+    </script>
+
+</body>
+</html>

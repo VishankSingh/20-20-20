@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body onload="checkDate()">
+
+    <script>
+        
+        var vl = localStorage.getItem("value");
+        console.log(vl);
+        
+        let date;
+        date = new Date();
+
+        console.log(date.getMinutes());
+        console.log(date.getSeconds());
+
+        function checkDate() {
+            date = new Date();
+            seconds = date.getSeconds();
+            minutes = date.getMinutes();
+
+            value = (minutes*60)+seconds;
+
+            setTimeout(() => { 
+                if (value%5 == 0) {
+               
+                }
+
+               
+            }, 1);
+        
+            setTimeout(() => {checkDate()}, 1);
+
+        }   
+    </script>
+    
+</body>
+</html>

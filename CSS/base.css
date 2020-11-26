@@ -1,0 +1,140 @@
+/* --------------------- base --------------------- */
+
+html,body{ 
+	width:100%;
+	height:100%;
+    background-color:#191919;
+    color: #ccc;
+    margin: 0;
+    padding: 0;
+    
+}
+
+body{
+    overflow: hidden;
+}
+
+#title {
+    text-align: center;
+    color: #36ffab;
+    font-weight: 300;
+    background-color: transparent;
+    font-family: 'Poppins';
+    text-decoration: none;
+}
+
+
+
+.title {
+    position: relative;
+    top: 10%;
+    left: 15%;
+    transform: translate(-50%, -50%);
+    background-color: transparent;
+}
+
+#footer {
+    background-color: transparent;
+    position: absolute;
+    bottom: 1.5%;
+    font-family: 'Roboto Mono';
+    font-weight: 300;
+}
+
+@media screen and (orientation: landscape) {
+    #navbar {
+        position: absolute;
+        top: 9%;
+        left: 72%;
+        width: 75%;
+        font-family: 'Roboto Mono';
+        font-size: 1.3vw;
+    }
+
+    #home{
+        position: absolute;
+    }
+
+    #set {
+        position: absolute;
+        left: 9%;
+    }
+
+    #about {
+        position: absolute;
+        left: 27%;
+    }
+    #footer {
+        font-size: 1.4vw;
+        right: 2%;
+    }
+
+    .title {
+        top: 10%;
+        left: 15%;
+    }
+
+    #title {
+        font-size: 4.5vw;
+    }
+}
+
+@media screen and (orientation: portrait) {
+    #navbar {
+        position: absolute;
+        top: 9%;
+        left: 70%;
+        width: 75%;
+        font-family: 'Roboto Mono';
+        font-size: 1.3vw;
+    }
+
+    #home{
+        position: absolute;
+    }
+
+    #set {
+        position: absolute;
+        left: 7vw;
+    }
+
+    #about {
+        position: absolute;
+        left: 19.8vw;
+    }
+
+    #footer {
+        font-size: 4vw;
+        right: 3.2%;
+    }
+
+    .title {
+        top: 10%;
+        left: 15%;
+    }
+
+    #title {
+        font-size: 10vw;
+    }
+}
+
+
+
+a:link {
+    color: #ccc;
+}
+
+a:visited {
+    color: #ccc;
+}
+
+a:hover {
+    color: #36ffab;
+}
+
+
+.colorise:hover {
+    color: #36ffab;
+}
+
+

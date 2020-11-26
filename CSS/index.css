@@ -1,0 +1,130 @@
+/* --------------------- about box --------------------- */
+#popup-box {
+    overflow-x:hidden;
+    overflow-y:auto;
+    -webkit-overflow-scrolling:touch;
+    z-index:999;
+    width:0;
+    height:0;
+    opacity:0;
+}
+#popup-box:target {
+    width:auto;
+    height:auto;
+    opacity:1;
+    -webkit-transition:  opacity 0.6s ease;
+    transition: opacity 0.3s ease;
+}
+#popup-box:target #popup-overlay-exit {
+    position:fixed;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    cursor:pointer;
+    background-color:rgba(10, 10, 10, 0.7);
+    z-index:1;
+}
+#popup-box #popup-dialog-box {
+    overflow-x: hidden;
+    overflow-y: auto;
+    z-index: 2;
+}
+#popup-content {
+    color: black;
+}
+
+@media screen and (orientation: landscape) {
+    #popup {
+        position: relative;
+        top: 35%;
+        left: 44.9vw;
+        width: 7.3vw;
+        padding: 1vw;
+        border: solid 0.2vw;
+        border-radius: 1vw;
+    }
+    
+    #popup-link {
+        font-size: 3vw;
+        font-family: 'Roboto Mono';
+        font-weight: 300;
+        text-decoration: none;
+        text-align: center;
+    }
+
+    #popup-box {
+        position: absolute;
+        top: 25%;
+        bottom:0;
+        left:0;
+        right:0;
+    }
+
+    #popup-box #popup-dialog-box {
+        border-radius: 0.1vw;
+        position: relative;
+        width: 50%;
+        margin: 10% auto;
+    }
+
+    #popup-box #popup-content {
+        font-family: 'Poppins';
+        font-size: 1.3vw;
+        background:#fff; 
+        padding:2vh 2vw 2vh 2vw;
+    }
+}
+
+@media screen and (orientation: portrait) {
+    #popup {
+        position: relative;
+        top: 50%;
+        left: 40%;
+        width: 12vw;
+        padding: 1vw;
+        border: solid 0.4vw;
+        border-radius: 2vw;
+    }
+    
+    #popup-link {
+        font-size: 5vw;
+        font-family: 'Roboto Mono';
+        font-weight: 300;
+        text-decoration: none;
+        text-align: center;
+    }
+
+    #popup-box {
+        position: absolute;
+        top: 15vh;
+        bottom:0;
+        left:0;
+        right:0;
+    }
+
+    #popup-box #popup-dialog-box {
+        border-radius: 2vw;
+        position: relative;
+        width: 70%;
+        margin: 10% auto;
+    }
+
+    #popup-box #popup-content {
+        font-family: 'Poppins';
+        font-size: 4vw;
+        background:rgb(255, 255, 255); 
+        padding:1.5vh 5vw 1.5vh 5vw;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+

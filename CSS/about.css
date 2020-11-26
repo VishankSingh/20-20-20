@@ -1,0 +1,37 @@
+#aboutTitle {
+    font-family: 'Poppins';
+   
+}
+
+#aboutContent {
+    font-family: 'Poppins';
+    font-weight: 200;
+}
+
+.bold {
+    font-weight: 500;
+}
+
+
+@media screen and (orientation: landscape) {
+    #aboutTitle {
+        position: absolute;
+        font-size: 4vw;
+        top: 37%;
+        left: 44%;
+        
+       
+    }
+    
+    #aboutContent {
+        position: absolute;
+        font-size: 1.1vw;
+        top: 50%;
+        left: 27%;
+        right: 27%;
+    }
+}
+
+@media screen and (orientation: portrait) {
+    
+}

@@ -10,6 +10,7 @@
     <!-- stylesheet -->
     <link rel="stylesheet" media="screen" href="CSS\base.css">
     <link rel="stylesheet" media="screen" href="CSS\set.css">
+    <script src="notificaton.js"></script>
 
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;300;400&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300&display=swap" rel="stylesheet">
@@ -35,15 +36,9 @@
         </div>
     </div>
 
-
-
-
-
-
-
     <div id="setValueContainer">
         <span id="rangeValue"></span>
-        <input id="range" type="range" name="" value="mins" min="10" max="30" onChange="rangeSlide(this.value);console.log(value);" onmousemove="rangeSlide(this.value)">
+        <input id="range" type="range" value="mins" min="10" max="20" step="5" onChange="rangeSlide(this.value);console.log(value);" onmousemove="rangeSlide(this.value)">
     </div>
 
     <footer id="footer">
